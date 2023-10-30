@@ -1,10 +1,13 @@
+
 $(document).ready(function () {
 
   $(window).on('hashchange', route);
 
   function route() {
+    
     var hash = window.location.hash;
     switch (hash) {
+
 
       case "#facturevendeur":
         $.get("template/facturevendeur.tpl.html", function (template) {
@@ -18,7 +21,7 @@ $(document).ready(function () {
         break;
         
       case "#stock":
-        $.get("template/stock.tpl.html", function (template) {
+      $.get("template/stock.tpl.html", function (template) {
           $("#my-content").html(template);
         }, "html");
         break;
@@ -31,6 +34,7 @@ $(document).ready(function () {
         $.get("template/messagerievendeur.tpl.html", function (template) {
           $("#my-content").html(template);
         }, "html");
+        
         break;
       
   
