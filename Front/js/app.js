@@ -13,27 +13,46 @@ $(document).ready(function () {
         $.get("template/facturevendeur.tpl.html", function (template) {
           $("#my-content").html(template);
         }, "html");
+        $.get('template/heard.tpl.html', function (template) {
+          $("#codeContainer").append(template);
+      }, "html");
         break;
         case "#commandevendeur":
         $.get("template/commandevendeur.tpl.html", function (template) {
           $("#my-content").html(template);
-        }, "html");
+      }, "html");
+      
+      $.get('template/heard.tpl.html', function (template) {
+          $("#codeContainer").append(template);
+      }, "html");
+      
         break;
         
       case "#stock":
-      $.get("template/stock.tpl.html", function (template) {
+        $.get("template/stock.tpl.html", function (template) {
           $("#my-content").html(template);
-        }, "html");
+      }, "html");
+      
+      $.get('template/heard.tpl.html', function (template) {
+          $("#codeContainer").append(template);
+      }, "html");
+      
         break;
       case "#post":
         $.get("template/feedvendeur.tpl.html", function (template) {
           $("#my-content").html(template);
         }, "html");
+        $.get('template/heard.tpl.html', function (template) {
+          $("#codeContainer").append(template);
+      }, "html");
         break;
       case "#conversationvendeur":
         $.get("template/messagerievendeur.tpl.html", function (template) {
           $("#my-content").html(template);
         }, "html");
+        $.get('template/heard.tpl.html', function (template) {
+          $("#codeContainer").append(template);
+      }, "html");
         
         break;
       
@@ -42,6 +61,7 @@ $(document).ready(function () {
         $.get("template/indexvendeur.tpl.html", function (template) {
           $("#my-content").html(template);
         }, "html");
+
     }
   }
 
