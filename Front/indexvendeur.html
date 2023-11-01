@@ -8,45 +8,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.118.2">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="./././assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./././assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./././assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./././assets/img/favicons/favicon.ico">
+  <link rel="manifest" href="./././assets/img/favicons/manifest.json">
+  <meta name="msapplication-TileImage" content="./././assets/img/favicons/mstile-150x150.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="./././assets/js/config.js"></script>
+  <script src="./././vendors/simplebar/simplebar.min.js"></script>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap"
+      rel="stylesheet">
+  <link href="./././vendors/simplebar/simplebar.min.css" rel="stylesheet">
+  <link href="./././assets/css/theme-rtl.css" rel="stylesheet" id="style-rtl">
+  <link href="./././assets/css/theme.css" rel="stylesheet" id="style-default">
+  <link href="./././assets/css/user-rtl.css" rel="stylesheet" id="user-style-rtl">
+  <link href="./././assets/css/user.css" rel="stylesheet" id="user-style-default">
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
 
-  <link rel="stylesheet" href="./css/dashboard.css">
-  <link rel="stylesheet" href="./css/dashboard.rtl.css">
-  <style>
-    #mycontent{
-      display: flex;
-    }
-  </style>
-
-
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard.rtl.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
   <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-
-
-
-  <!-- Custom styles for this template -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-
-  <script src="./assets/js/color-modes.js"></script>
-
-
-  <title>Dashboard Template · Bootstrap v5.3</title>
 
 
 </head>
 
 <body>
-  
+
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
       <path
@@ -179,7 +179,7 @@
         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
     </symbol>
   </svg>
- 
+
   <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Stockline</a>
 
@@ -206,53 +206,136 @@
       <input class="form-control w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
     </div>
   </header>
+  <div class="col-15" style = "margin: 2%"> 
+  <div id="my-content">
 
-  
+  </div>
+  </div>
+  <div class="col-10">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+        <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu"
+          aria-labelledby="sidebarMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel">Stockline</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#dashboard" class="nav-link d-flex awlign-items-center gap-2 active" aria-current="page"
+                  href="#">
+                  <svg class="bi">
+                    <use xlink:href="#house-fill" />
+                  </svg>
+                  Tableau de bord
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#profil" class="nav-link d-flex align-items-center gap-2" href="#">
+                  <svg class="bi">
+                    <use xlink:href="#people" />
+                  </svg>
+                  Profil
+                </a>
+              </li>
+              </li>
+
+              <li class="nav-item">
+                <a href="#stock" class="nav-link d-flex align-items-center gap-2" href="#">
+                  <svg class="bi">
+                    <use xlink:href="#graph-up" />
+                  </svg>
+                  Stocks
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#commandevendeur" class="nav-link d-flex align-items-center gap-2" href="#">
+                  <svg class="bi">
+                    <use xlink:href="#cart" />
+                  </svg>
+                  Commandes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#facturevendeur" class="nav-link d-flex align-items-center gap-2" href="#">
+                  <svg class="bi">
+                    <use xlink:href="#file-earmark" />
+                  </svg>
+                  Factures
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#conversationvendeur" class="nav-link d-flex align-items-center gap-2" href="#">
+                  <svg class="bi">
+                    <use xlink:href="#file-earmark-text" />
+                  </svg>
+                  Conversations
+                </a>
+              </li>
+            </ul>
+
+
+            <hr class="my-3">
+
+            <ul class="nav flex-column mb-auto">
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#">
+                  <svg class="bi">
+                    <use xlink:href="#gear-wide-connected" />
+                  </svg>
+                  Paramètres
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#deconnection">
+                  <svg class="bi">
+                    <use xlink:href="#door-closed" />
+                  </svg>
+                  Se déconnecter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
 
     </div>
-    
-  <div id="my-content" >
-    
   </div>
-  <div id="my-conten" >
-    
   </div>
-  
 
-  </div>
- 
-  <link rel="stylesheet" href="./css/dashboard.css">
-  <link rel="stylesheet" href="./css/dashboard.rtl.css">
+
+  <script src="js/dashboard.js"></script>
+  <script src="./assets/js/functions.js"></script>
+  <script src="./assets/js/color-modes.js"></script>
   <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/messagerievendeur.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js.map"></script>
   <script type="text/javascript" src="js/mustache.min.js"></script>
-
-  
-
+  <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/messagerievendeur.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js"
     integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp"
     crossorigin="anonymous"></script>
-  <script src="js/dashboard.js"></script>
-  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
   <!-- Vendors -->
   <script src="./assets/vendor/dropzone/dist/dropzone.js"></script>
   <script src="./assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="./assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
   <script src="./assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
-
-  <!-- Theme Functions -->
-  <script src="./assets/js/functions.js"></script>
-
-
-  <!-- Vendors -->
   <script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
-  
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
 </body>
 
 

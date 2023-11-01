@@ -1,0 +1,181 @@
+<!-- début de l'ajout du produit -->
+   
+<div class="col-lg-8 pe-lg-2">
+    <div class="card mb-3">
+    <div class="card-body">
+        <div class="row flex-between-center">
+            <div class="col-md">
+                <h5 class="mb-2 mb-md-0">Ajouter un post</h5>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-link text-secondary p-0 me-3 fw-medium" role="button">Annuler</button>
+                <button class="btn btn-primary" role="button"><a href="#ajoutpost"class="text-white">Ajouter un post</a> </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row g-0">
+<div class="col-lg-8 pe-lg-2">
+    <div class="card mb-3">
+        <div class="card-header bg-body-tertiary">
+            <h6 class="mb-0">Choisir un produit</h6>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="row gx-2">
+                    <label class="form-label" for="origin-country">Produits enregistrés </label>
+                    <select class="form-select" id="origin-country" name="origin-country">
+                        <option value="">Selectionner </option>
+                        <option value="China">Produit_id1</option>
+                        <option value="India">Produit_id2</option>
+                        <option value="United States">Produit_id3</option>
+                    </select>
+                </div>
+            </form>
+            <div class="col mt-5">
+                <button class="btn btn-primary" role="button"> Ajouter un produit </button>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header bg-body-tertiary">
+            <h6 class="mb-0">Ajouter un nouveau produit</h6>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="row gx-2">
+                    <div class="col-12 mb-3">
+                        <label class="form-label" for="product-name">Nom du produit :</label>
+                        <input class="form-control" id="product-name" type="text" />
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label class="form-label" for="manufacturar-name">Provenance</label>
+                        <input class="form-control" id="manufacturar-name" type="text" />
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label class="form-label" for="release-date">Date d'arrivage : </label>
+                        <input class="form-control datetimepicker" id="release-date" type="text"
+                            data-options='{"dateFormat":"d/m/y","disableMobile":true}' />
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label class="form-label" for="manufacturar-name">Prix :</label>
+                        <input class="form-control" id="manufacturar-name" type="text" />
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label class="form-label" for="release-date">Spécificités : </label>
+                        <div class="row gx-2 flex-between-center mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0 text-600">Calibre</h6>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="d-flex flex-between-center">
+                                    <h6 class="mb-0 text-700">5/6</h6><a class="btn btn-sm btn-link text-danger"
+                                        href="#!" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Remove"><span class="fs--1 fas fa-trash-alt"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gy-3 gx-2">
+                        <div class="col-sm-3">
+                            <input class="form-control form-control-sm" id="specification-label" type="text"
+                                placeholder="Spécificité" />
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="d-flex gap-2 flex-between-center">
+                                <input class="form-control form-control-sm" id="specification-property"
+                                    type="text" placeholder="Valeur" />
+                                <button class="btn btn-sm btn-falcon-default">Ajouter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header bg-body-tertiary">
+                <h6 class="mb-0">Détails</h6>
+            </div>
+            <div class="card-body">
+                <div class="row gx-2">
+                    <div class="col-12 mb-3">
+                        <label class="form-label" for="product-description">Description:</label>
+                        <div class="create-product-description-textarea">
+                            <textarea class="tinymce d-none" data-tinymce="data-tinymce"
+                                name="product-description" id="product-description"
+                                required="required"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 mb-3">
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col mt-2 mb-3 mr-2 ">
+                <button class="btn btn-primary" role="button"> Ajouter un produit </button>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header bg-body-tertiary">
+                <h6 class="mb-0">Ajouter une photo: </h6>
+            </div>
+            <div class="card-body">
+                <form class="dropzone dropzone-multiple p-0" id="dropzoneMultipleFileUpload"
+                    data-dropzone="data-dropzone" action="#!" data-options='{"acceptedFiles":"image/*"}'>
+                    <div class="fallback">
+                        <input name="file" type="file" multiple="multiple" />
+                    </div>
+                    <div class="dz-message" data-dz-message="data-dz-message"> <img class="me-2"
+                            src="./././assets/img/icons/cloud-upload.svg" width="25" alt="" /><span
+                            class="d-none d-lg-inline">Déposez l'image ici..<br /></span></div>
+                    <div class="dz-preview dz-preview-multiple m-0 d-flex flex-column">
+                        <div class="d-flex media align-items-center mb-3 pb-3 border-bottom btn-reveal-trigger">
+                            <img class="dz-image" src="./././assets/img/icons/cloud-upload.svg" alt="..."
+                                data-dz-thumbnail="data-dz-thumbnail" />
+                            <div class="flex-1 d-flex flex-between-center">
+                                <div>
+                                    <h6 data-dz-name="data-dz-name"></h6>
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0 fs--1 text-400 lh-1" data-dz-size="data-dz-size"></p>
+                                        <div class="dz-progress"><span class="dz-upload"
+                                                data-dz-uploadprogress=""></span></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown font-sans-serif">
+                                    <button
+                                        class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal dropdown-caret-none"
+                                        type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"><span class="fas fa-ellipsis-h"></span></button>
+                                    <div class="dropdown-menu dropdown-menu-end border py-2"><a
+                                            class="dropdown-item" href="#!"
+                                            data-dz-remove="data-dz-remove">Enlever
+                                            des dossiers</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+<div class="card mt-3">
+<div class="card-body">
+    <div class="row justify-content-between align-items-center">
+
+        <div class="col-auto">
+            <button class="btn btn-link text-secondary p-0 me-3 fw-medium" role="button">Annuler</button>
+            <button class="btn btn-primary" role="button">Ajouter un post</a> </button>        </div>
+    </div>
+</div>
+</div>
+<!-- fin  de l'ajout du produit -->
